@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <!-- Good Fonts are from https://fonts.google.com -->
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hi</title>
+    <link href="https://fonts.googleapis.com/css?family=Hi+Melody" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Hi Melody', cursive;
+      }
+      #header {
+        font-size: 18px;
+        text-decoration: underline;
+        color: #0F0F0F;
+      }
+      #aurora {
+        background-color: black;
+        border: 3px solid grey;
+        border-radius: 10px;
+        width: 25%;
+        height: 50%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -200px;
+      }
+      #aurora p {
+        text-align: center;
+        padding-top: 50px;
+      }
+      .aurora100 {
+        -webkit-transtion: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+        border-radius: 5px;
+        text-decoration: none;
+        background-color: white;
+        border: 2px solid grey;
+        color: black;
+      }
+      .aurora100:hover {
+        background-color: black;
+        color: white;
+      }
+    </style>
+    <script>
+      function mollyOpen() {
+        alert('Molly is a horse.');
+        console.log("Hi");
+        document.getElementById("header").innerHTML = "Molly";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Preset</h1>
+    <p id="header">Artifical</p>
+    <hr />
+    <br />
+    <div id="aurora">
+      <p>Boo</p>
+    </div>
+    <button type="button" class="aurora100" onclick="mollyOpen()">Molly</button>
+    <table>
+      <tr>
+        <td> Price </td>
+        <td> Ingredient </td>
+        <td> Supply </td>
+      </tr>
+      <tr>
+        <td> 0.05$ p/lb </td>
+        <td> Rice </td>
+        <td> 50lbs </td>
+      </tr>
+    </table>
+  </body>
+</html>
